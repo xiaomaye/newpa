@@ -63,6 +63,12 @@ proxy-groups:
     proxies:
       - CFnat
       - CFnat2
+      - CFnat3
+      - CFnat4
+      - CFnat5
+      - CFnat6
+      - CFnat7
+      - CFnat8
   - name: 📲 电报消息
     type: select
     proxies:
