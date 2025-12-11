@@ -27,7 +27,13 @@ proxy-groups:
       - 🔮 负载均衡
       - DIRECT
       - CFnat
+      - CFnat2
       - CFnat3
+      - CFnat4
+      - CFnat5
+      - CFnat6
+      - CFnat7
+      - CFnat8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -35,14 +41,26 @@ proxy-groups:
     tolerance: 50
     proxies:
       - CFnat
+      - CFnat2
       - CFnat3
+      - CFnat4
+      - CFnat5
+      - CFnat6
+      - CFnat7
+      - CFnat8
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
       - CFnat
+      - CFnat2
       - CFnat3
+      - CFnat4
+      - CFnat5
+      - CFnat6
+      - CFnat7
+      - CFnat8
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -50,7 +68,13 @@ proxy-groups:
     interval: 180
     proxies:
       - CFnat
+      - CFnat2
       - CFnat3
+      - CFnat4
+      - CFnat5
+      - CFnat6
+      - CFnat7
+      - CFnat8
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -71,7 +95,13 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - CFnat
+      - CFnat2
       - CFnat3
+      - CFnat4
+      - CFnat5
+      - CFnat6
+      - CFnat7
+      - CFnat8
 rules:
   - DOMAIN-KEYWORD,2xiaopan,🎯 全球直连,no-track
   - DOMAIN-SUFFIX,tv.yydsys.cc,🎯 全球直连
